@@ -1,11 +1,11 @@
-package com.paul9537.ex.lesson1;
+package com.paul9537.ex.lesson01;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.paul9537.ex.lesson1.model.Person;
+import com.paul9537.ex.lesson01.model.Person;
 
 @RestController // @Controller + @ResponseBody
 @RequestMapping("/lesson1/ex01")

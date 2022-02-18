@@ -23,5 +23,47 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 			`id` = #{id}
 		
 	</select>
+	
+	<insert id="insertReviewByObject" parameterType="com.paul9537.ex.lesson03.model.Review">
+		INSERT INTO `new_review`
+		(
+			`storeId`
+			, `menu`
+			, `userName`
+			, `point`
+			, `review`
+			, `createdAt`
+			, `updatedAt`
+		) VALUE (
+			#{storeId}
+			, #{menu}
+			, #{userName}
+			, #{point}
+			, #{review}
+			, now()
+			, now()
+		)
+	</insert>
+	
+	<insert id="insertReviewByField" parameterType="map">
+		INSERT INTO `new_review`
+		(
+			`storeId`
+			, `menu`
+			, `userName`
+			, `point`
+			, `review`
+			, `createdAt`
+			, `updatedAt`
+		) VALUE (
+			#{storeId}
+			, #{menu}
+			, #{userName}
+			, #{point}
+			, #{review}
+			, now()
+			, now()
+		)
+	</insert>
 
 </mapper>

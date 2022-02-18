@@ -1,4 +1,4 @@
-package com.paul9537.ex.lesson1;
+package com.paul9537.ex.lesson01;
 
 import java.util.HashMap;
 import java.util.Map;
