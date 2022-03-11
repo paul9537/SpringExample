@@ -39,5 +39,14 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		)
 		
 	</insert>
+	
+	<select id="selectNameCount" parameterType="string" resultType="int">
+		SELECT 
+			count(*)
+		FROM
+			`new_user`
+		WHERE
+			`name` = #{name}
+	</select>
 
 </mapper>
